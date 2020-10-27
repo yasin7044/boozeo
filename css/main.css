@@ -204,9 +204,7 @@ header {
   text-align: left;
   padding: 40px;
   overflow-wrap: break-word;
-  font-size: calc(2.2vw + 2.5rem);
-  line-height: 1;
-  max-width: 80vw;
+  /* font-size: calc(2.2vw + 2.5rem); */
 }
 
 .hero .hero-text .hero-color {
