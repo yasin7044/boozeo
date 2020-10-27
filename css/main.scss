@@ -257,6 +257,9 @@ header {
  border: 0;
  
   z-index: 2;
+  &.card-body{
+    background-color: #F9FAFA;
+  }
 }
 
 .gradient-below {

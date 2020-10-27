@@ -235,6 +235,10 @@ header {
   z-index: 2;
 }
 
+.card.card-body {
+  background-color: #F9FAFA;
+}
+
 .gradient-below {
   border-radius: 0 0 0.45rem 0.45rem;
   bottom: 0;
