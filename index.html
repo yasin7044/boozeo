@@ -20,6 +20,21 @@
     <!-- //////=========////////// Main CSS \\\\\\\\\\=========\\\\\\ -->
     <link rel="stylesheet" href="css/main.css" />
     <title>Boozeo</title>
+    <script>
+var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+function mischandler(){
+return false;
+}
+function mousehandler(e){
+var myevent = (isNS) ? e : event;
+var eventbutton = (isNS) ? myevent.which : myevent.button;
+if((eventbutton==2)||(eventbutton==3)) return false;
+}
+document.oncontextmenu = mischandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+</script>
   </head>
   <body>
     <!-- Navbar -->
@@ -125,8 +140,8 @@
               <p>
                 We create and maintain product and services of highest
                 achievable standards. We offer our products and services at an
-                affordable price point. We motivate and support members of Kaafi
-                Desi team at all levels, fueling continuous growth.
+                affordable price point. We motivate and support members of Boozeo
+                 team at all levels, fueling continuous growth.
               </p>
               <div class="gradient-below gradient2"></div>
             </div>
@@ -203,7 +218,7 @@
               <p>
                 We create and maintain product and services of highest
                 achievable standards. We offer our products and services at an
-                affordable price point. We motivate and support members of Kaafi
+                affordable price point. We motivate and support members of Boozeo
                 Desi team at all levels, fueling continuous growth.
               </p>
               <div class="gradient-below gradient2"></div>
@@ -478,7 +493,7 @@
  	<li id="phone-icon">Phone: (123) 666-7777</li>
  	<!-- <li>Toll-free: 800-TXT-EXAS</li> -->
    <br>
-   <i class="fa fa-map-marker"  id="map-icon"  style="color: white; aria-hidden="true"></i>
+   <i class="fa fa-map-marker"  id="map-icon"  style="color: white;" aria-hidden="true"></i>
    <li>42 N Jane Doe Road</li>
    <li>Somewhere, Texas 66066</li>
 
@@ -511,7 +526,7 @@
 
     <!-- <footer>
       <span>
-        Kaafi Desi, All Rights Reserved | Powered by
+        Boozeo Desi, All Rights Reserved | Powered by
         <a href="">Simply Syntax Technologies</a>
       </span>
     </footer> -->
@@ -549,5 +564,29 @@
         });
       });
     </script>
+
+<script>
+  document.onkeydown = function(e) {
+          if (e.ctrlKey && 
+              (e.keyCode === 67 || 
+               e.keyCode === 86 || 
+               e.keyCode === 85 || 
+               e.keyCode === 117)) {
+              return false;
+          } else {
+              return true;
+          }
+  };
+  $(document).keypress("u",function(e) {
+    if(e.ctrlKey)
+    {
+  return false;
+  }
+  else
+  {
+  return true;
+  }
+  });
+  </script>
   </body>
 </html>
